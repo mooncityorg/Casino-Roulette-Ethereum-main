@@ -50,7 +50,5 @@ module.exports = async () => {
       await resolveRequestId(requestId)
     }
   }
-  console.log(colors.gray('Done.'))
-
   console.log(colors.yellow('Random signer is up and running!'))
 }
