@@ -50,7 +50,6 @@ contract Roulette is VRFConsumerBase, ERC20, Ownable {
   uint256 public bet_fee;
   uint256 public redeem_min_time = 2 hours;
 
-  // Minimum required liquidity for betting 1 token
   // uint256 public minLiquidityMultiplier = 36 * 10;
   uint256 public minLiquidityMultiplier = 100;
   
@@ -435,9 +434,6 @@ contract Roulette is VRFConsumerBase, ERC20, Ownable {
     IERC20(bet_token).transfer(owner(), _collected_fees);
   }
 
-  /**
-    * Sets the value of Chainlink's VRF fee
-    */
   function setVRFFee(uint256 _fee) external onlyOwner {
     fee = _fee;
   }
