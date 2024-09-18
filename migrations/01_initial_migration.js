@@ -54,20 +54,6 @@ module.exports = async function (deployer, environment) {
       .catch((e) => console.error(e))
   } else {
     throw 'Invalid network'
-    // TODO: Figure out automated deployments
-    /*
-    const network = networks.find(network => network.network_name === process.env.NETWORK);
-    if (!network) {
-      throw 'Invalid network';
-    }
-    const daiToken = await deployer.deploy(daiMock, await web3.utils.toWei('0', 'ether'));
-    await deployer.deploy(
-      Roulette,
-      daiToken.address,
-      network.vrf_coordinator_address,
-      network.link_token_address,
-      network.keyHash,
-      network.vrf_fee
-    );*/
+
   }
 }
