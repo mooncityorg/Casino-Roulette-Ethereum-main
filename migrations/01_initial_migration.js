@@ -8,7 +8,7 @@ module.exports = async function (deployer, environment) {
   if (environment === 'ganache') {
     const fee = '100000000000000000'
     const keyHash =
-      '0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4'
+      '0x6c3699283bda56ad74f6b855546325b68d482e983d852a7a82979cc4807b641f4'
 
     await deployer
       .deploy(daiMock, '1')
