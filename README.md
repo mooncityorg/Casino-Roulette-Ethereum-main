@@ -1,6 +1,5 @@
 SakuraCasino Roulette
 ---
-
 ## Usage
 To install this package, just run
 ```
