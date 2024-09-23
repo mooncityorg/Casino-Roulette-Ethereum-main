@@ -53,7 +53,6 @@ contract Roulette is VRFConsumerBase, ERC20, Ownable {
   // uint256 public minLiquidityMultiplier = 36 * 10;
   uint256 public minLiquidityMultiplier = 100;
   
-  // Constant value to represent an invalid result
   uint8 public constant INVALID_RESULT = 99;
 
   mapping (uint8 => Color) COLORS;
