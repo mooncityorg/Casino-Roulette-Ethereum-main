@@ -1,7 +1,6 @@
 const colors = require('colors/safe')
 const Roulette = artifacts.require('RouletteDev')
 const daiMock = artifacts.require('Dai')
-const linkTokenMock = artifacts.require('LinkToken')
 const VRFCoordinatorMock = artifacts.require('VRFCoordinatorMock')
 
 module.exports = async function (deployer, environment) {
